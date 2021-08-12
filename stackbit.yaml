@@ -1,0 +1,74 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  libs:
+    type: data
+    label: Libs
+    file: libs.toml
+    fields:
+      - type: object
+        name: js
+        label: Js
+        fields:
+          - type: object
+            name: leaflet
+            label: Leaflet
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: integrity
+                label: Integrity
+          - type: object
+            name: plyr
+            label: Plyr
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: integrity
+                label: Integrity
+          - type: object
+            name: instantpage
+            label: Instantpage
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: integrity
+                label: Integrity
+      - type: object
+        name: css
+        label: Css
+        fields:
+          - type: object
+            name: leaflet
+            label: Leaflet
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: integrity
+                label: Integrity
+          - type: object
+            name: plyr
+            label: Plyr
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: integrity
+                label: Integrity
